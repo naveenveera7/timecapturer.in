@@ -1,31 +1,206 @@
-body{
-    background-image: url('https://images.shiksha.com/mediadata/images/articles/1568193656phpmWI2xq.jpeg');
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://wallpaperaccess.com/full/7640226.jpg'); 
+
     background-size: cover;
-    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: Arial, sans-serif; 
+}
+
+marquee{
+    color: aliceblue;
 }
 button{
-    float: right;
-    background-color:rgb(36, 190, 250) ; /* Green background color */
+    transform: translateY(-3350%);
+    background-color:#4CAF50 ; /* Green background color */
             border: none;
             color: white;
-            padding: 10px 20px;
+            padding: 6px 12px;
             text-align: center;
             font-size: 14px;
-            margin: 6px 4px;
+            margin: 4px 2px;
             transition-duration: 0.4s;
             cursor: pointer;
             border-radius: 6px;
             border: 1px solid transparent;
-            box-shadow: -2px 8px 12px rgba(0, 0, 0, 0.849), 0 6px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: -2px 8px 12px rgba(0, 0, 0, 0.849), 0 6px 20px rgba(227, 23, 23, 0.1);
 }
-a{
+
+button:hover{
+    background-color: rgb(10, 186, 235);
+    box-shadow: 0 0 8px 8px aqua;
+}
+
+#one{
+    transform: translateY(620%);
+    padding: 0;
+}
+#one a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+li{
+    margin-bottom: 15px;
+}
+#one a:hover{
+    box-shadow: 0 0 10px 10px skyblue;
+}
+h1{
+    color:black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 4px 10px 10px rgb(22, 22, 22);
+    text-align: center;
+    margin:8px 25px;
+    margin-bottom: 1px;
+
+}
+h2{color:black;
+    font-family: cursive;
+    text-shadow: 4px 10px 10px black;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.out{
+    color: black;
+    font-family: cursive;
+    font-size: larger;
+    font-weight: bold;
+    text-shadow: 4px 12px 8px black;
+    text-align: center;
+    margin: 8px 20px;
+    margin-top: 2px;
+}
+h3{
+    font-style: italic;
+    position:sticky;
+    top: 20px;
     
-    float:right;
+    text-align: center;
+    font-size: x-large;
+    text-shadow:0 10px 10px #f63a07;
 }
-h1,h2,h3{
-    text-shadow: 4px 14px 8px black;
-    text-align: right;
+
+h5{
+    text-align: center;
 }
-footer{
-    color:antiquewhite
+h5:hover{
+   color: #f63a07;
+}
+.page-content{
+animation: fadeInLeftAnimation 1s linear;
+}
+@keyframes fadeInLeftAnimation {
+    from {
+        opacity: 0;
+        bottom: 200px; 
+    }
+    to {
+        opacity: 1;
+        bottom: 0; 
+    }
+}
+
+.top{
+
+    position: absolute;
+    top:60%;
+    left:40%;
+    right: 40%;
+
+}
+.top img{
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgb(14, 13, 13);
+}
+.in{
+    transform: translateY(20%);
+    color: rgb(242, 246, 247);
+    font-weight: bolder;
+    font-size: x-large;
+
+}
+.on{
+    display: flex;
+    transform: translateY(4800%);
+    color: #f9f4f4;
+    font-weight: bolder;
+}
+.my{
+
+    position: absolute;
+    top: 140%;
+}
+.my img{
+    /* box-shadow: 0 0 8px 8px #f9f4f4; */
+    border-radius: 10px;
+    transition: all 1s ease;
+    margin: 1px;
+    filter: grayscale(1);
+}
+.my img:hover {
+    transform: translateY(-100px);
+    width: 300px;
+    height: 200px;
+    box-shadow: 0 0 12px 12px rgba(104, 177, 249, 0.932);
+    filter: grayscale(0);
+}
+#search{
+    margin-top: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    width: 80px;
+    height: 20px;
+    border-color: turquoise;
+    background-color: white;
+    transition: all 0.5s ease;
+}
+#search:hover{
+    box-shadow: 0 0 8px 8px aqua;
+    height: 25px;
+}
+#nav{
+ background-color:white;
+ height: 30px;
+ border-radius: 4px;
+ box-shadow: 0 0 10px 10px skyblue;
+  transform: translateX(150%);
+  position: fixed;
+  top:3%;
+}
+#nav a{
+    color:black;
+    text-shadow: 0 0px 1px black;
+   font-size:smaller;
+   font-weight: bold;
+    padding: 15px;
+    margin: 0;
+    transition: all 0.5s ease;
+
+}
+#nav a:hover{
+
+  font-size: 10px;
+  color: rgb(173, 12, 12);
+  text-shadow: 2px 4px 8px rgb(212, 12, 29);
+}
+.photo{
+    height: 35vh;
+    width: 30vw;
+    float: right;
+    
+}
+#about{
+    transform: translateY(-50%);
+}
+#ted{
+    font-style: oblique;
+    color: #f3efed;
+    transform: translateY(600%);
+    text-align: center;
+    font-weight: bolder;
+  font-size: larger;
 }
